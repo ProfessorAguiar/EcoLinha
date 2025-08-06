@@ -1,130 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EcoLinha+</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .image-content img {
-      /* max-width: 35%; */
-      width: 40vw;
-      height: 60vh;
-      display: block;
-      margin: 0px 0px 0px 0px;
+    .hero-section {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .hero-section img {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+    .section-img {
       border-radius: 12px;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     }
-    /* #tecnologia .image-content img {
-      max-width: 50%;
-    } */
-    .section-layout {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+    .footer {
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
       text-align: center;
-      padding: 40px 0px;
     }
-    .text-content {
-      max-width: 40%;
-      margin-left: 50px;
-      margin-right: 50px;
+    .nav-link {
+      color: #000 !important;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+    p{
+      margin-left: 40px;
+      margin-right: 40px
+    }
+    h2{
+      margin-left: 40px;
+      margin-right: 40px
+    }
+    .hero-section{
+      background-image: url('./img/img1.jpg');
+      background-repeat: no-repeat;
+      color: #fff;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #contato{
+      background-image: url('./24.png');
+      background-repeat: no-repeat;
+      color: #fff;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+    }
+    #Empresa{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #sustentabilidade{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #acessibilidade{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #sobre{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #tecnologia{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .text-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      flex-direction: column;
+      margin: 0;
+      background-color: #0000005b;
+      border-radius: 20px;
     }
   </style>
 </head>
 <body>
 
   <!-- Header -->
-  <header class="main-header">
-    <div class="logo">
-      <a href="#hero-section">
-       <img src="./img/logo.png" alt="">
-       </a>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #74ff6d; height:60px">
+    <div class="container">
+      <a class="navbar-brand" href="#hero-section">
+        <img src="./img/logo.png" alt="EcoLinha+" height="20" style="margin: 0; padding:0;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnologia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#acessibilidade">Acessibilidade</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sustentabilidade">Sustentabilidade</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Empresa">Empresa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
     </div>
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#tecnologia">Tecnologia</a></li>
-        <li><a href="#acessibilidade">Acessibilidade</a></li>
-        <li><a href="#sustentabilidade">Sustentabilidade</a></li>
-        <li><a href="#Empresa">Empresa</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  </nav>
 
-  <!-- Seções -->
-  <section class="hero-section" id="hero-section">
-    <div class="hero-text">
-      <img src="./img/EcoLinha+ (3) - Copia.png" alt="">
-      <div>
-      <h1>EcoLinha+</h1>
-      <p>Somos uma fabricante de ônibus acessível, sustentável e tecnológico. Pensados para o futuro das cidades.</p>
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero-section" style="height: 100vh;">
+    <div class="container">
+      <!-- <img src="./img/EcoLinha+ (3) - Copia.png" alt="EcoLinha+"> -->
+      <h1 class="display-5 mt-3">EcoLinha+</h1>
+      <p class="lead">Somos uma fabricante de ônibus acessível, sustentável e tecnológico. Pensados para o futuro das cidades.</p>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-5" style="background-color: #168710; color: #fff; height: 100vh;">
+    <div class="container d-flex flex-column flex-md-row align-items-center">
+      <div class="col-md-6">
+        <h2>Sobre a EcoLinha+</h2>
+        <p>Somos a EcoLinha+, uma fabricante de ônibus acessíveis, sustentáveis e tecnológicos, pensados para o futuro das cidades. Nossos veículos utilizam placas solares para eficiência energética e sistema de entrada por biometria, garantindo agilidade e segurança no embarque. Com acessibilidade total e soluções inovadoras, a EcoLinha+ oferece um transporte coletivo mais inclusivo, limpo e inteligente.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="./img/Design sem nome.png" alt="" class="img-fluid section-img">
       </div>
     </div>
   </section>
 
-  <section id="sobre" class="content-section bg1 section-layout">
-    <div class="text-content">
-      <h2>Sobre a EcoLinha+</h2>
-      <p>Somos a EcoLinha+, uma fabricante de ônibus acessíveis, sustentáveis e tecnológicos, pensados para o futuro das cidades. Nossos veículos utilizam placas solares para eficiência energética e sistema de entrada por biometria, garantindo agilidade e segurança no embarque. Com acessibilidade total e soluções inovadoras, a EcoLinha+ oferece um transporte coletivo mais inclusivo, limpo e inteligente.</p>
-    </div>
-    <div class="image-content">
-      <img src="./img/Design sem nome.png">
-    </div>
-  </section>
-
-  <section id="tecnologia" class="content-section bg2 section-layout">
-    <div class="image-content">
-      <img src="./img/tecnologia.jpg">
-    </div>
-    <div class="text-content">
-      <h2>Tecnologia</h2>
-      <p>Para oferecer mais segurança, praticidade e eficiência no transporte coletivo, nossa empresa implementou o sistema de entrada por tecnologia biométrica facial e digital em nossa frota de ônibus. Com essa inovação, os passageiros podem embarcar utilizando o reconhecimento facial ou a leitura da impressão digital, sem a necessidade de cartões físicos ou tíquetes.</p>
+  <!-- Tecnologia -->
+  <section id="tecnologia" class="py-5" style="background-color: #0a6105; color: #fff; height: 100vh;">
+    <div class="container d-flex flex-column flex-md-row align-items-center">
+      <div class="col-md-6 text-center">
+        <img src="./img/tecnologia.jpg" alt="Tecnologia" class="img-fluid section-img">
+      </div>
+      <div class="col-md-6">
+        <h2>Tecnologia</h2>
+        <p>Para oferecer mais segurança, praticidade e eficiência no transporte coletivo, nossa empresa implementou o sistema de entrada por tecnologia biométrica facial e digital em nossa frota de ônibus. Com essa inovação, os passageiros podem embarcar utilizando o reconhecimento facial ou a leitura da impressão digital, sem a necessidade de cartões físicos ou tíquetes.</p>
+      </div>
     </div>
   </section>
 
-  <section id="acessibilidade" class="content-section bg3 section-layout">
-    <div class="text-content">
-      <h2>Acessibilidade</h2>
-      <p>Nossos ônibus são equipados com recursos que atendem às normas de acessibilidade, como elevadores ou plataformas para cadeirantes, assentos preferenciais sinalizados, comunicação visual adequada, avisos sonoros e espaço reservado para pessoas com mobilidade reduzida. Além disso, trabalhamos constantemente para capacitar nossas equipes no atendimento humanizado e inclusivo.</p>
-    </div>
-    <div class="image-content">
-      <img src="./img/acessibilidade.png" 
-    alt="Acessibilidade em ônibus: espaço para cadeira de rodas">
-    </div>
-  </section>
-
-  <section id="sustentabilidade" class="content-section bg4 section-layout">
-    <div class="image-content">
-      <img src="./img/Sustentabilidade.png">
-    </div>
-    <div class="text-content">
-      <h2>Sustentabilidade</h2>
-      <p>Na busca constante por soluções que aliem eficiência, economia e responsabilidade ambiental, nossa empresa investe na tecnologia de placas solares instaladas nos ônibus para transformar a mobilidade urbana. Com isso, promovemos uma redução significativa nas emissões de carbono, colaborando para um futuro mais limpo e sustentável.</p>
+  <!-- Acessibilidade -->
+  <section id="acessibilidade" class="py-5 " style="background-color: #168710; color: #fff; height: 100vh;">
+    <div class="container d-flex flex-column flex-md-row align-items-center">
+      <div class="col-md-6">
+        <h2>Acessibilidade</h2>
+        <p>Nossos ônibus são equipados com recursos que atendem às normas de acessibilidade, como elevadores ou plataformas para cadeirantes, assentos preferenciais sinalizados, comunicação visual adequada, avisos sonoros e espaço reservado para pessoas com mobilidade reduzida. Além disso, trabalhamos constantemente para capacitar nossas equipes no atendimento humanizado e inclusivo.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="./img/acessibilidade.png" alt="Acessibilidade em ônibus" class="img-fluid section-img">
+      </div>
     </div>
   </section>
 
- <section id="Empresa" class="content-section bg2 section-layout">
-    <div class="text-content" style="margin-right: 50px;">
-      <h2>Nossa Empresa</h2>
-      <p>Localização: Nossa empresa se localiza na AV- Almirante Barroso,81-Centro,Rio De Janeiro , Além da empresa na mesma localização também possuímos uma garagem para receber matérias, produzimos nosso produtos, entregamos e instalamos a central de carregamento nas garagens dos nossos clientes.</p>
-    </div>
-    <div class="image-content">
-      <img src="./img/empresa.jpg">
-    </div>
-  </section>
-
-  <section id="contato" class="content-section bg5 section-layout">
-    <div class="text-content">
+  <!-- Sustentabilidade -->
+  <section id="sustentabilidade" class="py-5" style="background-color: #0a6105; color: #fff; height: 100vh;">
+    <div class="container d-flex flex-column flex-md-row align-items-center">
+      <div class="col-md-6 text-center">
+        <img src="./img/Sustentabilidade.png" alt="Sustentabilidade" class="img-fluid section-img">
+      </div>
+      <div class="col-md-6">
+        <h2>Sustentabilidade</h2>
+        <p>Na busca constante por soluções que aliem eficiência, economia e responsabilidade ambiental, nossa empresa investe na tecnologia de placas solares instaladas nos ônibus para transformar a mobilidade urbana. Com isso, promovemos uma redução significativa nas emissões de carbono, colaborando para um futuro mais limpo e sustentável.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Rodapé -->
+  <!-- Empresa -->
+  <section id="Empresa" class="py-5 " style="background-color: #168710; color: #fff; height: 100vh;">
+    <div class="container d-flex flex-column flex-md-row align-items-center">
+      <div class="col-md-6">
+        <h2>Nossa Empresa</h2>
+        <p>Localização: Nossa empresa se localiza na AV- Almirante Barroso, 81 - Centro, Rio de Janeiro. Além da empresa, na mesma localização também possuímos uma garagem para receber materiais, produzimos nossos produtos, entregamos e instalamos a central de carregamento nas garagens dos nossos clientes.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="./img/empresa.jpg" alt="Empresa" class="img-fluid section-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-5" style="height: 100vh;">
+    <div class="container text-center">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco para saber mais sobre nossos produtos e serviços.</p>
+      <p>email: contato@ecolinha.com</p>
+      <p>@ecolinha</p>
+      <a href="mailto:contato@ecolinha.com" class="btn btn-primary">Enviar E-mail</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2025 EcoLinha+ - Todos os direitos reservados.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
- 
